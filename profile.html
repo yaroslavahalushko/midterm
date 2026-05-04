@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Student profile page for the Erasmus Semester Planner." />
+  <title>Erasmus Semester Planner | Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-requires-auth="true">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">✈</span>
+        <span>Erasmus Semester Planner</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" data-menu-toggle>☰ Menu</button>
+      <nav>
+        <ul class="nav-list" data-nav-list>
+          <li><a href="home.html">🏠 Home</a></li>
+          <li><a href="dashboard.html">📋 Planner</a></li>
+          <li><a class="active" href="profile.html">👤 Profile</a></li>
+          <li><a href="details.html">🧭 Guide</a></li>
+          <li><button class="nav-logout" type="button" data-logout>Logout</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container page-shell roomy-shell">
+        <div class="section-header">
+          <div>
+            <h1>Student profile</h1>
+            <p class="section-intro">Keep your personal semester information in one place and update it before submitting documents.</p>
+          </div>
+        </div>
+
+        <div class="split-layout profile-layout-wide">
+          <article class="card profile-card-large">
+            <h2>Current profile overview</h2>
+            <div class="profile-summary profile-summary-large">
+              <p><strong>Name</strong><br /><span id="profileName">Yaroslava Halushko</span></p>
+              <p><strong>Email</strong><br /><span id="profileEmail">yaroslava.halushko@vdu.lt</span></p>
+              <p><strong>Destination</strong><br /><span id="profileCountry">Spain</span></p>
+              <p><strong>Semester</strong><br /><span id="profileSemester">Fall 2026</span></p>
+            </div>
+            <div class="profile-tags">
+              <span>Outgoing student</span>
+              <span>Learning Agreement</span>
+              <span>Document tracking</span>
+            </div>
+            <div class="helper-box">Use this page to update the profile instead of keeping it inside the planner dashboard.</div>
+          </article>
+
+          <aside class="card">
+            <h2>Planning notes</h2>
+            <p id="profileNotesPreview">Need host university course approval and accommodation search.</p>
+            <ul class="checklist-list compact-list">
+              <li>Destination university confirmed</li>
+              <li>Semester dates checked</li>
+              <li>Insurance period to verify</li>
+              <li>Travel booking not started yet</li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="split-layout profile-layout-wide">
+          <article class="card">
+            <h2>Edit profile</h2>
+            <form id="profileForm" class="profile-form">
+              <label for="profileNameInput">Full name</label>
+              <input id="profileNameInput" type="text" placeholder="Yaroslava Halushko" />
+              <label for="profileEmailInput">Email</label>
+              <input id="profileEmailInput" type="email" placeholder="student@vdu.lt" />
+              <label for="profileCountryInput">Destination country</label>
+              <input id="profileCountryInput" type="text" placeholder="Spain" />
+              <label for="profileSemesterInput">Semester</label>
+              <input id="profileSemesterInput" type="text" placeholder="Fall 2026" />
+              <label for="profileNotes">Notes</label>
+              <textarea id="profileNotes" rows="5" placeholder="Need host university course approval and accommodation search."></textarea>
+              <button type="submit">Save profile changes</button>
+            </form>
+            <div class="status-badge" id="profileStatus">Profile is ready for semester planning.</div>
+          </article>
+
+          <aside class="card">
+            <h2>Quick links</h2>
+            <div class="resource-list">
+              <a href="dashboard.html">Open planner dashboard</a>
+              <a href="details.html">Open student guide</a>
+              <a href="home.html#visuals">See planner visuals</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p class="small-note">Profile page of the Erasmus Semester Planner prototype.</p>
+      <div class="footer-links">
+        <a href="home.html">Home</a>
+        <a href="dashboard.html">Planner</a>
+        <a href="details.html">Guide</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

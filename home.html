@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Overview of the Erasmus Semester Planner for VDU students." />
+  <title>Erasmus Semester Planner | Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-requires-auth="true">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">✈</span>
+        <span>Erasmus Semester Planner</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" data-menu-toggle>☰ Menu</button>
+      <nav>
+        <ul class="nav-list" data-nav-list>
+          <li><a class="active" href="home.html">🏠 Home</a></li>
+          <li><a href="dashboard.html">📋 Planner</a></li>
+          <li><a href="profile.html">👤 Profile</a></li>
+          <li><a href="details.html">🧭 Guide</a></li>
+          <li><button class="nav-logout" type="button" data-logout>Logout</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid spacious-grid">
+        <article class="hero-copy">
+          <span class="eyebrow">For VDU exchange students</span>
+          <h1>Keep deadlines, documents and semester planning in one place.</h1>
+          <p>
+            Erasmus Semester Planner is a student-focused prototype that makes Erasmus preparation easier to understand.
+            Instead of keeping deadlines in many tabs and notes, the planner shows the most important information in one interface.
+          </p>
+          <p class="muted">
+            After login, you can move between the planner dashboard, your profile page and the student guide using the header icons.
+          </p>
+          <div class="cta-row">
+            <a class="button" href="dashboard.html">Open planner</a>
+            <a class="button secondary" href="profile.html">Open profile</a>
+          </div>
+          <div class="kpi-row">
+            <div class="kpi"><strong>Tasks</strong><span>Create, complete and delete planning steps</span></div>
+            <div class="kpi"><strong>Files</strong><span>Preview document names in one list</span></div>
+            <div class="kpi"><strong>Guide</strong><span>Follow clear preparation advice before departure</span></div>
+          </div>
+        </article>
+        <figure class="card hero-visual">
+          <img src="planner-hero.svg" alt="Illustration showing Erasmus planner screens" />
+          <figcaption class="meta">A cleaner student flow: login, profile, dashboard, tasks, documents and guide.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container page-shell roomy-shell">
+        <div class="section-header">
+          <div>
+            <h2>What you can do in the planner</h2>
+            <p class="section-intro">The prototype follows the main Erasmus preparation steps from account entry to final document checks.</p>
+          </div>
+        </div>
+        <div class="grid-3">
+          <article class="card feature-card">
+            <div class="icon-circle">🧾</div>
+            <h3>Prepare your semester</h3>
+            <p>View your destination, semester status, application countdown and current priorities on the dashboard.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="icon-circle">✅</div>
+            <h3>Manage tasks dynamically</h3>
+            <p>Add custom tasks, mark them complete, filter results and keep a clear overview of pending steps.</p>
+          </article>
+          <article class="card feature-card">
+            <div class="icon-circle">📄</div>
+            <h3>Track important files</h3>
+            <p>Preview document names like your Learning Agreement, insurance confirmation and travel documents.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container info-grid roomy-grid">
+        <article class="card info-card">
+          <h2>Recommended preparation flow</h2>
+          <div class="steps-grid two-row-grid">
+            <div class="step-card card">
+              <div class="icon-circle">1</div>
+              <h3>Login</h3>
+              <p>Enter the website through the login screen and open the planner pages.</p>
+            </div>
+            <div class="step-card card">
+              <div class="icon-circle">2</div>
+              <h3>Complete profile</h3>
+              <p>Save your destination, semester and personal notes on the dedicated profile page.</p>
+            </div>
+            <div class="step-card card">
+              <div class="icon-circle">3</div>
+              <h3>Plan tasks</h3>
+              <p>Add application, agreement, housing and travel preparation tasks with their deadline.</p>
+            </div>
+            <div class="step-card card">
+              <div class="icon-circle">4</div>
+              <h3>Check documents</h3>
+              <p>Keep document names and required preparation steps visible before departure.</p>
+            </div>
+          </div>
+        </article>
+        <aside class="card notice-card">
+          <h3>Why students need this</h3>
+          <ul class="checklist-list">
+            <li>Exchange preparation often comes from many emails, websites and notes.</li>
+            <li>A single dashboard reduces confusion and missed deadlines.</li>
+            <li>Students can understand what still needs to be done before mobility starts.</li>
+            <li>The layout stays usable on both laptop and mobile screens.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="visuals">
+      <div class="container page-shell roomy-shell">
+        <div class="section-header">
+          <div>
+            <h2>Planner visuals</h2>
+            <p class="section-intro">The visuals below preview the core parts of the website.</p>
+          </div>
+        </div>
+        <div class="gallery-grid gallery-grid-wide">
+          <figure class="card gallery-card" data-lightbox-item>
+            <img src="login-register.svg" alt="Login and registration visual" />
+            <figcaption>Login access</figcaption>
+          </figure>
+          <figure class="card gallery-card" data-lightbox-item>
+            <img src="dashboard-preview.svg" alt="Semester dashboard visual" />
+            <figcaption>Semester dashboard</figcaption>
+          </figure>
+          <figure class="card gallery-card" data-lightbox-item>
+            <img src="tasks-preview.svg" alt="Task manager visual" />
+            <figcaption>Task manager</figcaption>
+          </figure>
+          <figure class="card gallery-card" data-lightbox-item>
+            <img src="docs-preview.svg" alt="Document center visual" />
+            <figcaption>Document center</figcaption>
+          </figure>
+          <figure class="card gallery-card" data-lightbox-item>
+            <img src="mobile-preview.svg" alt="Mobile preview visual" />
+            <figcaption>Responsive mobile view</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p class="small-note">Erasmus Semester Planner prototype for VDU students.</p>
+      <div class="footer-links">
+        <a href="dashboard.html">Planner</a>
+        <a href="profile.html">Profile</a>
+        <a href="details.html">Guide</a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="lightbox">
+    <div class="lightbox-top">
+      <strong>Visual preview</strong>
+      <button class="ghost-btn" id="closeLightbox" type="button">Close</button>
+    </div>
+    <img id="lightboxImage" src="" alt="" />
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
