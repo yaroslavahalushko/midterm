@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Login or register to enter the Erasmus Semester Planner prototype." />
+  <title>Erasmus Semester Planner | Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="auth-page">
+  <main class="auth-screen">
+    <section class="auth-hero-panel">
+      <span class="eyebrow">VDU Erasmus planner</span>
+      <h1>Plan your exchange semester from one clear workspace.</h1>
+      <p>
+        This prototype helps students organize their destination, deadlines, tasks, documents and preparation notes before departure.
+      </p>
+      <ul class="checklist-list auth-benefits">
+        <li>Preview your semester dashboard and planning progress</li>
+        <li>Add tasks and file names without reloading the page</li>
+        <li>Use a responsive interface on desktop and mobile</li>
+      </ul>
+      <figure class="card auth-visual-card">
+        <img src="login-register.svg" alt="Login and registration illustration for Erasmus planner" />
+      </figure>
+    </section>
+
+    <section class="card auth-form-panel">
+      <div class="brand auth-brand">
+        <span class="brand-mark">✈</span>
+        <span>Erasmus Semester Planner</span>
+      </div>
+      <h2>Login or create account</h2>
+      <p class="section-intro">Sign in first to open the full website and planner sections.</p>
+
+      <div class="tab-row" role="tablist" aria-label="Authentication tabs">
+        <button class="tab-button active" id="showLogin" type="button">Login</button>
+        <button class="tab-button" id="showRegister" type="button">Register</button>
+      </div>
+
+      <form id="loginForm" class="simple-form">
+        <label for="loginEmail">Email</label>
+        <input id="loginEmail" type="email" value="yaroslava.halushko@vdu.lt" required />
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" type="password" value="password123" required />
+        <button type="submit">Enter planner</button>
+      </form>
+
+      <form id="registerForm" class="simple-form hidden">
+        <label for="registerName">Full name</label>
+        <input id="registerName" type="text" placeholder="Yaroslava Halushko" required />
+        <label for="registerEmail">Email</label>
+        <input id="registerEmail" type="email" placeholder="student@vdu.lt" required />
+        <label for="registerCountry">Destination country</label>
+        <input id="registerCountry" type="text" placeholder="Spain" required />
+        <label for="registerSemester">Semester</label>
+        <input id="registerSemester" type="text" placeholder="Fall 2026" required />
+        <label for="registerPassword">Password</label>
+        <input id="registerPassword" type="password" placeholder="Create password" required />
+        <button type="submit">Create account and continue</button>
+      </form>
+
+      <p class="auth-status" id="authStatus">This prototype stores profile data only in your browser and opens the website after login.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
