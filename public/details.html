@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Student guide for Erasmus preparation." />
+  <title>Erasmus Semester Planner | Student guide</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-requires-auth="true">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="home.html">
+        <span class="brand-mark">✈</span>
+        <span>Erasmus Semester Planner</span>
+      </a>
+      <button class="mobile-nav-toggle" type="button" data-menu-toggle>☰ Menu</button>
+      <nav>
+        <ul class="nav-list" data-nav-list>
+          <li><a href="home.html">🏠 Home</a></li>
+          <li><a href="dashboard.html">📋 Planner</a></li>
+          <li><a href="profile.html">👤 Profile</a></li>
+          <li><a class="active" href="details.html">🧭 Guide</a></li>
+          <li><button class="nav-logout" type="button" data-logout>Logout</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="container page-shell roomy-shell">
+        <div class="section-header">
+          <div>
+            <h1>Student guide</h1>
+            <p class="section-intro">Preparation advice for the exchange period before departure.</p>
+          </div>
+        </div>
+
+        <div class="split-layout planner-detail-layout">
+          <article class="card timeline-card">
+            <h2>Suggested timeline</h2>
+            <ul class="timeline-list">
+              <li><strong>2–3 months before</strong><span>Choose courses, confirm destination deadlines, start your Learning Agreement.</span></li>
+              <li><strong>6–8 weeks before</strong><span>Arrange accommodation, insurance and travel documents.</span></li>
+              <li><strong>2–4 weeks before</strong><span>Check transport, upload missing files and review official instructions.</span></li>
+              <li><strong>Final week</strong><span>Verify departure details, emergency contacts and arrival information.</span></li>
+            </ul>
+          </article>
+
+          <aside class="card notice-card">
+            <h2>Useful reminders</h2>
+            <ul class="checklist-list">
+              <li>Make sure your insurance covers the entire mobility period.</li>
+              <li>Keep signed versions of your documents in one folder.</li>
+              <li>Confirm accommodation address before booking travel.</li>
+              <li>Check your host university orientation dates.</li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="split-layout planner-detail-layout">
+          <article class="card">
+            <h2>Important resources</h2>
+            <div class="resource-list">
+              <a href="dashboard.html">Return to planner workspace</a>
+              <a href="profile.html">Update your profile and destination</a>
+              <a href="home.html#visuals">Review the visual overview</a>
+            </div>
+          </article>
+
+          <article class="card video-card">
+            <h2>Prototype demo videos</h2>
+            <video controls preload="metadata">
+              <source src="demo-dashboard.mp4" type="video/mp4" />
+            </video>
+            <div style="height:1rem"></div>
+            <video controls preload="metadata">
+              <source src="demo-task-controls.mp4" type="video/mp4" />
+            </video>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-wrap">
+      <p class="small-note">Student guide page of the Erasmus Semester Planner prototype.</p>
+      <div class="footer-links">
+        <a href="home.html">Home</a>
+        <a href="dashboard.html">Planner</a>
+        <a href="profile.html">Profile</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
